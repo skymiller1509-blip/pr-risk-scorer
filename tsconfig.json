@@ -1,0 +1,1 @@
+{"compilerOptions":{"esModuleInterop":true,"forceConsistentCasingInFileNames":true,"jsx":"react","lib":["dom","ES6"],"module":"commonjs","outDir":"build","skipLibCheck":true,"strict":false,"target":"es2022"},"include":["src/**/*"]}

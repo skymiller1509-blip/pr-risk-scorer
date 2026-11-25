@@ -1,0 +1,20 @@
+permissions:
+  scopes:
+    - read:pullrequest:bitbucket
+modules:
+  bitbucket:repoPullRequestOverviewPanel:
+    - key: pr-risk-scorer-panel
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: Pull Request Risk
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.tsx
+app:
+  runtime:
+    name: nodejs24.x
